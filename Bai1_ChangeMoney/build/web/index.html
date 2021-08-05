@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+    function run(id){
+       document.f.action="change?rate="+id;
+       document.f.submit();
+    }
+    </script>    
+    </head>
+    <body>
+        <form name="f" action="" method="post" >
+            enter number:
+            <input type="text" name="num" value=""/>
+            <br/>
+            <input type="submit" onclick="run('usd')" value="Change USD"/>
+            <input type="submit" onclick="run('jpy')" value="Change JPY"/>
+        </form>
+    </body>
+</html>
+
